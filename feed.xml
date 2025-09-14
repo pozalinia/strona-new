@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>POZa Linią</title>
-    <link href="https://github.com/pozalinia/strona-new/feed.xml" rel="self" />
-    <link href="https://github.com/pozalinia/strona-new" />
+    <link href="https://pozalinia.github.io/strona-new/feed.xml" rel="self" />
+    <link href="https://pozalinia.github.io/strona-new" />
     <updated>2025-09-14T20:07:24+02:00</updated>
     <author>
         <name>admin</name>
     </author>
-    <id>https://github.com/pozalinia/strona-new</id>
+    <id>https://pozalinia.github.io/strona-new</id>
 
     <entry>
         <title>Test</title>
         <author>
             <name>admin</name>
         </author>
-        <link href="https://github.com/pozalinia/strona-new/test.html"/>
-        <id>https://github.com/pozalinia/strona-new/test.html</id>
+        <link href="https://pozalinia.github.io/strona-new/test.html"/>
+        <id>https://pozalinia.github.io/strona-new/test.html</id>
 
         <updated>2025-09-14T20:07:24+02:00</updated>
             <summary>
@@ -27,7 +27,7 @@
             <![CDATA[
                 
   <p>
-    <a href="https://github.com/pozalinia/strona-new/przedmowa.html">SDASDAS</a>
+    <a href="https://pozalinia.github.io/strona-new/przedmowa.html">SDASDAS</a>
   </p>
 
   <div  class="gallery-wrapper">
@@ -48,8 +48,8 @@
         <author>
             <name>admin</name>
         </author>
-        <link href="https://github.com/pozalinia/strona-new/asdas.html"/>
-        <id>https://github.com/pozalinia/strona-new/asdas.html</id>
+        <link href="https://pozalinia.github.io/strona-new/asdas.html"/>
+        <id>https://pozalinia.github.io/strona-new/asdas.html</id>
 
         <updated>2025-09-14T20:05:56+02:00</updated>
             <summary>
@@ -59,7 +59,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <p>asdklfha;kjsdhg;kjadhfgasdf<figure class="post__image"><img loading="lazy"  src="https://github.com/pozalinia/strona-new/media/posts/6/okladka1_dark.webp" alt="" width="2084" height="1043" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xs.webp 640w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-sm.webp 768w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-md.webp 1024w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-lg.webp 1366w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xl.webp 1600w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-2xl.webp 1920w"></figure>
+                <p>asdklfha;kjsdhg;kjadhfgasdf<figure class="post__image"><img loading="lazy"  src="https://pozalinia.github.io/strona-new/media/posts/6/okladka1_dark.webp" alt="" width="2084" height="1043" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-xs.webp 640w ,https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-sm.webp 768w ,https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-md.webp 1024w ,https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-lg.webp 1366w ,https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-xl.webp 1600w ,https://pozalinia.github.io/strona-new/media/posts/6/responsive/okladka1_dark-2xl.webp 1920w"></figure>
 <p> </p>
 <p>Asdjl;hdfkjahlsdkjfhiuhAKJSDHFLIUAHSD</p>
             ]]>
