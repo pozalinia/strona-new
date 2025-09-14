@@ -2,19 +2,19 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "POZa Linią",
     "description": "",
-    "home_page_url": "https://inowakowski.github.io/pozalinia/strona-new",
-    "feed_url": "https://inowakowski.github.io/pozalinia/strona-new/feed.json",
+    "home_page_url": "https://github.com/pozalinia/strona-new",
+    "feed_url": "https://github.com/pozalinia/strona-new/feed.json",
     "user_comment": "",
     "author": {
         "name": "admin"
     },
     "items": [
         {
-            "id": "https://inowakowski.github.io/pozalinia/strona-new/test.html",
-            "url": "https://inowakowski.github.io/pozalinia/strona-new/test.html",
+            "id": "https://github.com/pozalinia/strona-new/test.html",
+            "url": "https://github.com/pozalinia/strona-new/test.html",
             "title": "Test",
             "summary": "SDASDAS",
-            "content_html": "\n  <p>\n    <a href=\"https://inowakowski.github.io/pozalinia/strona-new/przedmowa.html\">SDASDAS</a>\n  </p>\n\n  <div  class=\"gallery-wrapper\">\n    <div class=\"gallery\" data-columns=\"3\">\n      \n    </div>\n  </div>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"\" height=\"\" width=\"\" alt=\"\"  data-is-external-image=\"true\">\n      \n    </figure>",
+            "content_html": "\n  <p>\n    <a href=\"https://github.com/pozalinia/strona-new/przedmowa.html\">SDASDAS</a>\n  </p>\n\n  <div  class=\"gallery-wrapper\">\n    <div class=\"gallery\" data-columns=\"3\">\n      \n    </div>\n  </div>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"\" height=\"\" width=\"\" alt=\"\"  data-is-external-image=\"true\">\n      \n    </figure>",
             "author": {
                 "name": "admin"
             },
@@ -24,11 +24,11 @@
             "date_modified": "2025-09-14T20:07:24+02:00"
         },
         {
-            "id": "https://inowakowski.github.io/pozalinia/strona-new/asdas.html",
-            "url": "https://inowakowski.github.io/pozalinia/strona-new/asdas.html",
+            "id": "https://github.com/pozalinia/strona-new/asdas.html",
+            "url": "https://github.com/pozalinia/strona-new/asdas.html",
             "title": "asdas",
             "summary": "asdklfha;kjsdhg;kjadhfgasdf Asdjl;hdfkjahlsdkjfhiuhAKJSDHFLIUAHSD",
-            "content_html": "<p>asdklfha;kjsdhg;kjadhfgasdf<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/okladka1_dark.webp\" alt=\"\" width=\"2084\" height=\"1043\" sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xs.webp 640w ,https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-sm.webp 768w ,https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-md.webp 1024w ,https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-lg.webp 1366w ,https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xl.webp 1600w ,https://inowakowski.github.io/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-2xl.webp 1920w\"></figure>\n<p> </p>\n<p>Asdjl;hdfkjahlsdkjfhiuhAKJSDHFLIUAHSD</p>",
+            "content_html": "<p>asdklfha;kjsdhg;kjadhfgasdf<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://github.com/pozalinia/strona-new/media/posts/6/okladka1_dark.webp\" alt=\"\" width=\"2084\" height=\"1043\" sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xs.webp 640w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-sm.webp 768w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-md.webp 1024w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-lg.webp 1366w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-xl.webp 1600w ,https://github.com/pozalinia/strona-new/media/posts/6/responsive/okladka1_dark-2xl.webp 1920w\"></figure>\n<p> </p>\n<p>Asdjl;hdfkjahlsdkjfhiuhAKJSDHFLIUAHSD</p>",
             "author": {
                 "name": "admin"
             },
