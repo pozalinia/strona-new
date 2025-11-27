@@ -5,14 +5,14 @@
     "home_page_url": "https://pozalinia.github.io/strona-new",
     "feed_url": "https://pozalinia.github.io/strona-new/feed.json",
     "user_comment": "",
-    "icon": "https://pozalinia.github.io/strona-new/media/website/logo_dark.png",
+    "icon": "https://pozalinia.github.io/strona-new/media/website/logo_light.png",
     "author": {
         "name": "admin"
     },
     "items": [
         {
-            "id": "https://pozalinia.github.io/strona-new/harap.html",
-            "url": "https://pozalinia.github.io/strona-new/harap.html",
+            "id": "https://pozalinia.github.io/strona-new/post/harap/",
+            "url": "https://pozalinia.github.io/strona-new/post/harap/",
             "title": "H.A.R.A.P.",
             "summary": "H.A.R.A.P. Siódmego dnia razy znikąd nie ustały, nieszczęścia przestały chodzić parami, zaczęły łączyć się w septety, oktety i nonety. I masz babo omlet! Na tym się nie zagra. Istnieje inny sposób. Los pocięty na tysiące kartoników to loteria fantomowa. Wejść w ten hazard to jak&hellip;",
             "content_html": "<p><strong>H.A.R.A.P.</strong></p>\n<p> </p>\n<p>Siódmego dnia razy znikąd nie ustały, nieszczęścia przestały</p>\n<p>chodzić parami, zaczęły łączyć się w septety, oktety i nonety.</p>\n<p> </p>\n<p>I masz babo omlet! Na tym się nie zagra. Istnieje inny sposób.</p>\n<p>Los pocięty na tysiące kartoników to loteria fantomowa.</p>\n<p> </p>\n<p>Wejść w ten hazard to jak powiesić sobie na szyi sznurek</p>\n<p>z tabliczką; „Jestem zgrany!”. Są jeszcze sznury ludzi splecionych</p>\n<p> </p>\n<p>w grube basiory. Gdzie dieta, gdzie etykieta? Wyczuwam tu</p>\n<p>ogromną nieprzyzwoitość, jakiś łut szczęścia, który trochę</p>\n<p> </p>\n<p>przypomina prask, a trochę uderzenie w gong. I ten przymus,</p>\n<p>by bity był jednocześnie bijącym, a w pewnych okolicznościach</p>\n<p> </p>\n<p>już tylko samym bitem. <em>Hello darkness, my old friend</em>, ale to już</p>\n<p>ósmego dnia, który szczęśliwie pozostał na etapie planowania.</p>",
@@ -27,8 +27,8 @@
             "date_modified": "2025-11-25T19:05:18+01:00"
         },
         {
-            "id": "https://pozalinia.github.io/strona-new/duza-destrukcja-sytuacyjna.html",
-            "url": "https://pozalinia.github.io/strona-new/duza-destrukcja-sytuacyjna.html",
+            "id": "https://pozalinia.github.io/strona-new/post/duza-destrukcja-sytuacyjna/",
+            "url": "https://pozalinia.github.io/strona-new/post/duza-destrukcja-sytuacyjna/",
             "title": "Duża destrukcja sytuacyjna",
             "summary": "Duża destrukcja sytuacyjna Większość ludzi nie zdaje sobie sprawy, ile razy dziennie prosi o zgodę. Tańczą wokół głowy przerywane, praktyczne sny: o dziurze w denku plecaka, o kolegach wygrywających letnie grand prix w skokach narciarskich, wreszcie tempeh, adresy sklepów wielkopowierzchniowych, przepisy na dania z, ale&hellip;",
             "content_html": "<p><strong>Duża destrukcja sytuacyjna</strong></p>\n<p> </p>\n<p>Większość ludzi nie zdaje sobie sprawy, ile razy dziennie prosi o zgodę.<br>Tańczą wokół głowy przerywane, praktyczne sny: o dziurze w denku plecaka,<br>o kolegach wygrywających letnie grand prix w skokach narciarskich,<br>wreszcie tempeh, adresy sklepów wielkopowierzchniowych, przepisy<br>na dania z, ale myślami – przede wszystkim – jestem z rodakami,<br>którzy końcem lipca lecą do płonącej Grecji na zasłużone wakacje.</p>\n<p> </p>\n<p>Porywam ich samoloty za smugi kondensacyjne, żeby wyczyniać niemożliwe,<br>niespotykane w lotnictwie pasażerskim akrobacje, obracając w palcach<br>legendarną ludzką zdolność do adaptacji, przeżuwając głośno sentencję o świetle. <br>Nie zajmuj się tymi, którzy wypełniają pustkę, niech twój reflektor razi <br>tego, co pustkę wytwarza, lejąc prosto w gardło sok z gumijagód z miąższem, <br>z koncentratu, z pięciolitrowej bańki, wytrącając na dnie cały osad świata.</p>",
@@ -43,18 +43,18 @@
             "date_modified": "2025-11-25T18:32:26+01:00"
         },
         {
-            "id": "https://pozalinia.github.io/strona-new/przedmowa.html",
-            "url": "https://pozalinia.github.io/strona-new/przedmowa.html",
+            "id": "https://pozalinia.github.io/strona-new/post/przedmowa/",
+            "url": "https://pozalinia.github.io/strona-new/post/przedmowa/",
             "title": "Przedmowa",
             "summary": "Drogie Osoby Czytelnicze! Wszystko, co naprawdę istotne, dzieje się gdzieś pomiędzy liniami, w przestrzeni na marginesach. „Na górę jedzie? A gdzie ma jechać, w bok?” – pytał kiedyś Miałczyński u Koterskiego, prowokując nas dziś do porzucenia komfortowych pionów i poziomów, ku ruchowi bocznemu, horyzontalnemu, wymykającemu&hellip;",
             "content_html": "<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://pozalinia.github.io/strona-new/media/posts/5/przedmowa_dark.png\" alt=\"\" width=\"2084\" height=\"1033\" sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-xs.webp 640w ,https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-sm.webp 768w ,https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-md.webp 1024w ,https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-lg.webp 1366w ,https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-xl.webp 1600w ,https://pozalinia.github.io/strona-new/media/posts/5/responsive/przedmowa_dark-2xl.webp 1920w\"></figure>Drogie Osoby Czytelnicze!</p>\n<p>Wszystko, co naprawdę istotne, dzieje się gdzieś pomiędzy liniami, w przestrzeni na marginesach. „Na górę jedzie? A gdzie ma jechać, w bok?” – pytał kiedyś Miałczyński u Koterskiego, prowokując nas dziś do porzucenia komfortowych pionów i poziomów, ku ruchowi bocznemu, horyzontalnemu, wymykającemu się prostej logice wzlotów i upadków. „Otwiera tym samym możliwość, z której chętnie korzysta najnowsza poezja – ruchu windą w bok, czyli myślenia horyzontalnego, przestrzennego, w kategoriach potencjalności i wbrew logice” – jak pisze Jakub Skurtys.</p>\n<p>Właśnie w tym ruchu – pełnym przekory i nieoczywistych kierunków – odnajdujemy sens istnienia naszego czasopisma. „Przez jeden punkt przeprowadzić można nieskończenie wiele prostych”, jak pisze Zuzanna Stasiak, przypominając nam, że literatura to właśnie takie punkty przecięcia, „skupiska” indywidualnych perspektyw. Punkty, z których, zgodnie ze słowami Justyny Kulikowskiej, „jedyny ruch, jaki mogę wykonać, to ten w obrębie zdania” – bo każde zdanie,</p>\n<p> </p>\n<p>     każde słowo, każda fraza może być początkiem wyjścia poza własne ograniczenia.</p>\n<p>W pierwszym numerze „POZa Linią” oddajemy głos osobom autorskim, których teksty stają się soczewkami ogniskującymi współczesność. Selekcja tekstów to decyzja redakcji, natomiast nasi krytycy opracowali do nich komentarze i podzielili je na cztery grupy tematyczne: „PIONY // POZIOMY”, „PUNKTY → SKUPISKA”, „PROSTE = (Z)ŁAMANE”, „FUNKCJE &amp; FALE”. Każda z tych kategorii wyznacza własną geometrię – układy znaczeń, napięć, opozycji i rytmów, które pozwalają dostrzec mniej oczywiste związki i zależności.</p>\n<p>Dopełnieniem literackich treści są grafiki autorstwa Joanny Wróbel. Jej kompozycje – dynamiczne, abstrakcyjne, pełne geometrycznych form i swobodnych linii – idealnie oddają ideę wychodzenia poza schemat, zachęcając nas do spojrzenia pod innym kątem na znane formy i przestrzenie.</p>\n<p>Zapraszamy Was zatem poza utarte ścieżki – ku miejscom, w których „drwale wożą drewno do lasu i przerabiają na drzewa” (Tomek Bąk), gdzie „cienie popychają swoich ludzi” (Ewelina Cis), a „wszystko będzie się nawarstwiać w umyśle” (Michał Domagalski). Wyruszamy poza linię – nikt „nie jest samotną wyspą”, a literatura istnieje właśnie po to, byśmy mogli odnajdywać się w dialogu z innymi.</p>\n<p>Chcemy, by „POZa Linią” było przestrzenią takich właśnie rozmów – między autorami, pokoleniami, stylami. Rozmów, które uczą patrzeć krytycznie, dociekać, pytać. Rozmów, które zaczynają się poza linią i nigdy się na niej nie kończą.</p>\n<p>Redakcja</p>",
             "author": {
-                "name": "admin"
+                "name": "Redakcja"
             },
             "tags": [
             ],
             "date_published": "2025-09-10T17:28:16+02:00",
-            "date_modified": "2025-11-10T21:28:58+01:00"
+            "date_modified": "2025-11-26T20:59:33+01:00"
         }
     ]
 }

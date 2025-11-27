@@ -3,7 +3,7 @@
     <title>POZa Linią</title>
     <link href="https://pozalinia.github.io/strona-new/feed.xml" rel="self" />
     <link href="https://pozalinia.github.io/strona-new" />
-    <updated>2025-11-25T19:05:18+01:00</updated>
+    <updated>2025-11-26T20:59:33+01:00</updated>
     <author>
         <name>admin</name>
     </author>
@@ -14,8 +14,8 @@
         <author>
             <name>Piotr Gajda</name>
         </author>
-        <link href="https://pozalinia.github.io/strona-new/harap.html"/>
-        <id>https://pozalinia.github.io/strona-new/harap.html</id>
+        <link href="https://pozalinia.github.io/strona-new/post/harap/"/>
+        <id>https://pozalinia.github.io/strona-new/post/harap/</id>
             <category term="Wydanie_2"/>
             <category term="Przestrzenie otwarte"/>
 
@@ -54,8 +54,8 @@
         <author>
             <name>Tomasz Bąk</name>
         </author>
-        <link href="https://pozalinia.github.io/strona-new/duza-destrukcja-sytuacyjna.html"/>
-        <id>https://pozalinia.github.io/strona-new/duza-destrukcja-sytuacyjna.html</id>
+        <link href="https://pozalinia.github.io/strona-new/post/duza-destrukcja-sytuacyjna/"/>
+        <id>https://pozalinia.github.io/strona-new/post/duza-destrukcja-sytuacyjna/</id>
             <category term="Wydanie_2"/>
             <category term="Przestrzenie otwarte"/>
 
@@ -78,10 +78,10 @@
     <entry>
         <title>Przedmowa</title>
         <author>
-            <name>admin</name>
+            <name>Redakcja</name>
         </author>
-        <link href="https://pozalinia.github.io/strona-new/przedmowa.html"/>
-        <id>https://pozalinia.github.io/strona-new/przedmowa.html</id>
+        <link href="https://pozalinia.github.io/strona-new/post/przedmowa/"/>
+        <id>https://pozalinia.github.io/strona-new/post/przedmowa/</id>
 
         <updated>2025-09-10T17:28:16+02:00</updated>
             <summary>
