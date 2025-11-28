@@ -2476,7 +2476,9 @@ textarea {
   border-radius: inherit;
   display: block;
   height: 100%;
-  padding: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
 }
 
 .gallery__item figcaption {
@@ -2795,4 +2797,39 @@ textarea {
   .post-publish__grid a:visited {
     color: inherit;
   }
+}
+
+.content__related #grid {
+	display: grid;
+	gap: 1rem;
+	margin-inline: auto;
+}
+
+.content__related #grid a:link,
+.content__related #grid a:visited {
+	color: #2780bf;
+	font-weight: bold;
+}
+
+@media (min-width: 60ch) {
+	.content__related #grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (min-width: 100ch) {
+	.content__related #grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+.content__related #grid figure,
+.content__related #grid figcaption,
+.content__related #grid picture {
+	margin: 0;
+	padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	.content__related #grid .groupimg {
+		background-color: #d3d2bd;
+	}
 }
