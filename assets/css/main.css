@@ -7,6 +7,14 @@
   padding: 0;
 }
 
+#goprev, #gonext {
+	transition: transform 300ms ease-in;
+}
+
+#goprev:hover, #gonext:hover {
+	transform: scale(1.2);
+}
+
 article,
 aside,
 footer,
