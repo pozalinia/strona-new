@@ -2564,7 +2564,7 @@ textarea {
 
 .content__bio {
   display: flex;
-  margin: calc(var(--baseline) * 12 + 1vw) 0;
+  margin: calc(var(--baseline) * 6 + 1vw) 0;
 }
 
 @media all and (min-width: 37.5em) {
@@ -2578,8 +2578,9 @@ textarea {
     content: "";
     border-top: 1px solid var(--light);
     height: 1px;
-    margin-right: 2rem;
+    /* margin-right: 1rem; */
     width: 30%;
+    flex: 1;
   }
 }
 
@@ -2665,7 +2666,7 @@ textarea {
 
 @media all and (max-width: 37.4375em) {
   .content__nav-prev+.content__nav-next {
-    margin-top: calc(var(--baseline) * 6 + 1vw);
+    margin-top: calc(var(--baseline) * 12 + 1vw);
   }
 }
 
