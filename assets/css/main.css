@@ -3693,3 +3693,52 @@ textarea {
 	}
 }
 @import 'bio-margin.css';
+
+/* --- Custom Post Navigation (H1 Style) --- */
+
+.post-nav-custom {
+  /* Layout (zastępuje inline style) */
+  display: flex;
+  justify-content: space-between; /* Lepiej rozkłada elementy niż space-around */
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  /* Typografia (Skopiowana z definicji h1 w main.css) */
+  font-family: var(--heading-font);
+  /* Ta funkcja clamp odpowiada za skalowanie H1 na różnych ekranach */
+  font-size: clamp(1.5710900065rem, 1.5710900065rem + 1.424540906 * (100vw - 20rem) / 70, 2.9956309125rem);
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--headings-color);
+}
+
+/* Linki w nawigacji */
+.post-nav-custom a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.post-nav-custom a:hover {
+  color: var(--link-color);
+}
+
+/* Kontenery dla elementów (lewy, środek, prawy) dla stabilności */
+.post-nav-custom__item {
+  flex: 0 0 auto;
+  min-width: 2rem; /* Rezerwuje miejsce nawet jak link jest pusty */
+}
+
+.post-nav-custom__center {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+  /* Jeśli środek (tytuł) ma być mniejszy niż strzałki, odkomentuj linię poniżej: */
+  /* font-size: 1rem; */
+}
+
+/* Zachowanie ID goprev/gonext z Twojego CSS (transformacja) */
+#goprev, #gonext {
+  display: block; /* Ważne dla transformacji */
+}
