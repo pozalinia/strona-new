@@ -3805,3 +3805,12 @@ textarea {
     color: var(--gray);
     padding-left: 10px;
 } 
+
+/* Brak zawijanai tekstu - Mobile*/
+.post-poetary{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-x: auto; /* Włącza przewijanie poziome */
+    -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iPhone/iPad */
+}
