@@ -3742,3 +3742,66 @@ textarea {
 #goprev, #gonext {
   display: block; /* Ważne dla transformacji */
 }
+
+/*Bio na boku*/
+/* --- UKŁAD RECENZJI (Szeroki Grid) --- */
+
+.post-layout {
+    display: block; /* Mobilnie: jeden pod drugim */
+    width: 100%;
+}
+
+/* Reset marginesów dla wrapperów wewnątrz layoutu */
+.post-layout .entry-wrapper,
+.post-layout .content__entry {
+    max-width: 95%; /* Wewnątrz grida zajmują całą komórkę */
+    padding: 0;
+    margin: 1.5rem;
+}
+
+.layout-area-bio {
+        grid-column: 2;
+        align-self: start; /* Bio przyklejone do góry swojej sekcji */
+        /* margin-top: 1rem !important; Kasujemy marginesy z mobilka */
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #4847457b;
+        border-radius: 12px;
+    }
+
+@media all and (min-width: 65em) { /* Tylko duże ekrany (>1040px) */
+    .post-layout {
+        display: grid;
+        /* Kolumny: Tekst (reszta miejsca) | Bio (sztywne 300px) */
+        grid-template-columns: 1fr 300px;
+        
+        /* ZWIĘKSZONA SZEROKOŚĆ CAŁOŚCI - Żeby tekst nie był ściśnięty */
+        max-width: 1200px;
+        margin: 2rem 0px 2rem auto;
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    /* Przypisanie elementów do kolumn */
+    .layout-area-text {
+        grid-column: 1;
+    }
+    
+    .layout-area-bio {
+        grid-column: 2;
+        align-self: start; /* Bio przyklejone do góry swojej sekcji */
+        /* margin-top: 1rem !important; Kasujemy marginesy z mobilka */
+        margin: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 4px solid var(--light); /* Opcjonalna belka nad bio */
+    }
+}
+
+/* Style przycisku rozwijania (skopiowane z poprzednich kroków) */
+.js-bio-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--gray);
+    padding-left: 10px;
+} 
