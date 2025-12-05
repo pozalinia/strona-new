@@ -3813,4 +3813,18 @@ textarea {
     text-overflow: ellipsis;
     overflow-x: auto; /* Włącza przewijanie poziome */
     -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iPhone/iPad */
+    /* --- EFEKT FADE (ZANIKANIA) NA PRAWEJ KRAWĘDZI --- */
+    /* Tekst będzie widoczny w 90%, a ostatnie 10% szerokości ekranu będzie płynnie znikać */
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
 }
+
+@media all and (min-width: 65em) { /* Tylko duże ekrany (>1040px) */
+    .post-poetary {
+        white-space: normal;      /* PRZYWRACA ZAWIJANIE TEKSTU */
+        overflow-x: visible;      /* Wyłącza kontener przewijania */
+        mask-image: none;         /* Usuwa efekt fade */
+        -webkit-mask-image: none;
+    }
+}
+
