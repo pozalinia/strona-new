@@ -3743,6 +3743,15 @@ textarea {
   display: block; /* Ważne dla transformacji */
 }
 
+/* Brak zawijanai tekstu - Mobile*/
+.post-poetary{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-x: auto; /* Włącza przewijanie poziome */
+    -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iPhone/iPad */
+}
+
 /*Bio na boku*/
 /* --- UKŁAD RECENZJI (Szeroki Grid) --- */
 
@@ -3774,7 +3783,7 @@ textarea {
         display: grid;
         /* Kolumny: Tekst (reszta miejsca) | Bio (sztywne 300px) */
         grid-template-columns: 1fr 300px;
-        
+
         /* ZWIĘKSZONA SZEROKOŚĆ CAŁOŚCI - Żeby tekst nie był ściśnięty */
         max-width: 1200px;
         margin: 2rem 0px 2rem auto;
@@ -3786,7 +3795,7 @@ textarea {
     .layout-area-text {
         grid-column: 1;
     }
-    
+
     .layout-area-bio {
         grid-column: 2;
         align-self: start; /* Bio przyklejone do góry swojej sekcji */
@@ -3794,6 +3803,13 @@ textarea {
         margin: 1.5rem;
         padding-top: 1.5rem;
         border-top: 4px solid var(--light); /* Opcjonalna belka nad bio */
+    }
+
+    .post-poetary{
+      white-space: normal;      /* PRZYWRACA ZAWIJANIE TEKSTU */
+      overflow-x: visible;      /* Wyłącza pasek przewijania */
+      mask-image: none;         /* Usuwa efekt fade */
+      -webkit-mask-image: none;
     }
 }
 
@@ -3804,27 +3820,5 @@ textarea {
     line-height: 1;
     color: var(--gray);
     padding-left: 10px;
-} 
-
-/* Brak zawijanai tekstu - Mobile*/
-.post-poetary{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    overflow-x: auto; /* Włącza przewijanie poziome */
-    -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iPhone/iPad */
-    /* --- EFEKT FADE (ZANIKANIA) NA PRAWEJ KRAWĘDZI --- */
-    /* Tekst będzie widoczny w 90%, a ostatnie 10% szerokości ekranu będzie płynnie znikać */
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-}
-
-@media all and (min-width: 65em) { /* Tylko duże ekrany (>1040px) */
-    .post-poetary {
-        white-space: normal;      /* PRZYWRACA ZAWIJANIE TEKSTU */
-        overflow-x: visible;      /* Wyłącza kontener przewijania */
-        mask-image: none;         /* Usuwa efekt fade */
-        -webkit-mask-image: none;
-    }
 }
 
