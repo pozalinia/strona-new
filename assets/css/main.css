@@ -3750,6 +3750,13 @@ textarea {
     text-overflow: ellipsis;
     overflow-x: auto; /* Włącza przewijanie poziome */
     -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iPhone/iPad */
+
+    /* Fade (zanikanie) po prawej stronie */
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+
+    /* Opcjonalnie: margines na dole na pasek przewijania */
+    padding-bottom: 0.5rem;
 }
 
 /*Bio na boku*/
