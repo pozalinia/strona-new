@@ -3812,12 +3812,12 @@ textarea {
         border-top: 4px solid var(--light); /* Opcjonalna belka nad bio */
     }
 
-    /* .post-poetary{ */
-      /* white-space: normal;      PRZYWRACA ZAWIJANIE TEKSTU */
-      /* overflow-x: visible;      Wyłącza pasek przewijania */
-      /* mask-image: none;         Usuwa efekt fade */
-      /* -webkit-mask-image: none; */
-    /* } */
+    .post-poetary{
+      white-space: normal;      /* PRZYWRACA ZAWIJANIE TEKSTU */
+      overflow-x: visible;      /* Wyłącza pasek przewijania */
+      mask-image: none;         /* Usuwa efekt fade */
+      -webkit-mask-image: none;
+    }
 }
 
 /* Style przycisku rozwijania (skopiowane z poprzednich kroków) */
