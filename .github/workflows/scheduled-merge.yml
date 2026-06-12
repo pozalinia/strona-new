@@ -1,0 +1,30 @@
+name: Scheduled Merge to Main
+
+on:
+  schedule:
+    # Czas w UTC. Przykładowo: 15 dzień miesiąca, godzina 18:00 UTC (20:00 czasu polskiego)
+    - cron: '0 12 13 * *'
+  workflow_dispatch: # Umożliwia ręczne uruchomienie przyciskiem
+
+jobs:
+  merge-preview-to-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge preview into main
+        run: |
+          git checkout main
+          # Pobieramy najnowszą wersję preview, którą wrzuciło Publii
+          git fetch origin preview
+          git merge origin/preview --no-ff -m "Automatyczna premiera nowego numeru"
+          git push origin main
