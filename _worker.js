@@ -2,42 +2,49 @@ const GOOGLE_SHEET_TSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ
 
 export default {
   async fetch(request, env, ctx) {
-    const response = await fetch(request);
-    const url = new URL(request.url);
+    // 1. Pobieramy oryginalny plik statyczny z Publii
+    let response = await env.ASSETS.fetch(request);
 
-    // Sprawdzamy, czy użytkownik wchodzi na stronę "O nas"
+    const url = new URL(request.url);
+    
+    // Sprawdzamy, czy to podstrona "O nas"
     if (url.pathname.endsWith('/o-nas/')) {
+      
+      // BEZPIECZNIK 1: Jeśli przeglądarka ma skeszowaną stronę (304), zwracamy ją bez zmian
+      if (response.status === 304) {
+        return response;
+      }
+      
+      // BEZPIECZNIK 2: Upewniamy się, że modyfikujemy plik tekstowy/HTML
+      const contentType = response.headers.get('content-type') || '';
+      if (!contentType.includes('text/html')) {
+        return response;
+      }
+
       try {
-        // Pobieramy dane z Google Sheets (keszowanie w Cloudflare na 5 minut)
-        const sheetResponse = await fetch(GOOGLE_SHEET_TSV_URL, {
-          cf: { cacheTtl: 300 }
-        });
+        const sheetResponse = await fetch(GOOGLE_SHEET_TSV_URL, { cf: { cacheTtl: 300 } });
+        if (!sheetResponse.ok) return response;
+        
         const text = await sheetResponse.text();
         
-        // Parsowanie formatu TSV
         const bios = {};
         const lines = text.split('\n');
         for (let line of lines) {
           const [id, bio] = line.split('\t');
-          if (id && bio) {
-            bios[id.trim()] = bio.trim();
-          }
+          if (id && bio) bios[id.trim()] = bio.trim();
         }
 
-        // Użycie HTMLRewriter do wstrzyknięcia opisów w locie
         let rewriter = new HTMLRewriter();
-
         for (const [id, bio] of Object.entries(bios)) {
           rewriter.on(`[data-bio="${id}"]`, {
-            element(element) {
-              element.setInnerContent(bio);
-            }
+            element(element) { element.setInnerContent(bio); }
           });
         }
 
+        // Bezpiecznie zwracamy przetworzony strumień
         return rewriter.transform(response);
       } catch (err) {
-        // Jeśli Google Sheets padnie, Worker przepuści oryginalną stronę z Publii
+        // Awaryjne wyjście – w razie problemów z Google Sheets, ładuje się zwykła strona
         return response;
       }
     }
