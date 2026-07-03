@@ -382,27 +382,52 @@
 				}
 			});
 			document.body.appendChild(box);
-		});
-    document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".patronat-opis").forEach(function (opis) {
-    opis.classList.add("przycity");
-    // czy tekst faktycznie się nie mieści?
-    if (opis.scrollHeight <= opis.clientHeight + 2) {
-      opis.classList.remove("przycity"); // krótki opis - nic nie robimy
-      return;
-    }
-    var btn = document.createElement("button");
-    btn.className = "patronat-rozwin";
-    btn.textContent = "Rozwiń";
-    btn.setAttribute("aria-expanded", "false");
-    btn.addEventListener("click", function () {
-      var zwiniety = opis.classList.toggle("przycity");
-      btn.textContent = zwiniety ? "Rozwiń" : "Zwiń";
-      btn.setAttribute("aria-expanded", String(!zwiniety));
+		});</script><script>(function () {
+  function initRozwin() {
+    document.querySelectorAll(".patronat-opis").forEach(function (opis) {
+      if (opis.dataset.rozwinInit) return; // nie dubluj przy ponownym wywołaniu
+      opis.dataset.rozwinInit = "1";
+
+      function przytnij() {
+        opis.style.display = "-webkit-box";
+        opis.style.webkitBoxOrient = "vertical";
+        opis.style.webkitLineClamp = "6";
+        opis.style.overflow = "hidden";
+      }
+      function rozwin() {
+        opis.style.display = "";
+        opis.style.webkitBoxOrient = "";
+        opis.style.webkitLineClamp = "";
+        opis.style.overflow = "";
+      }
+
+      przytnij();
+      if (opis.scrollHeight <= opis.clientHeight + 2) {
+        rozwin(); // krótki opis - zostaje jak był
+        return;
+      }
+
+      var btn = document.createElement("button");
+      btn.className = "patronat-rozwin";
+      btn.textContent = "Rozwiń";
+      btn.setAttribute("aria-expanded", "false");
+      var zwiniety = true;
+      btn.addEventListener("click", function () {
+        zwiniety = !zwiniety;
+        if (zwiniety) { przytnij(); } else { rozwin(); }
+        btn.textContent = zwiniety ? "Rozwiń" : "Zwiń";
+        btn.setAttribute("aria-expanded", String(!zwiniety));
+      });
+      opis.insertAdjacentElement("afterend", btn);
     });
-    opis.insertAdjacentElement("afterend", btn);
-  });
-});</script><script>(function () {
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initRozwin);
+  } else {
+    initRozwin(); // strona już załadowana - działaj od razu
+  }
+})();</script><script>(function () {
     'use strict';
 
     var REMEMBER = true;
