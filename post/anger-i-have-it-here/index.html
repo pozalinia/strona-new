@@ -347,7 +347,7 @@
             if (p.readable) { h.classList.add('wcag-readable'); }
             if (p.underline) { h.classList.add('wcag-underline'); }
         } catch (e) {}
-    })();</script><link rel="canonical" href="./../../post/anger-i-have-it-here/"><link rel="shortcut icon" href="./../../media/website/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="./../../assets/css/style.css?v=14dceaf5d37f1360ed8055152b1a7128"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./../../post/anger-i-have-it-here/"},"headline":"Anger, I have it here","datePublished":"2026-06-03T13:30+02:00","dateModified":"2026-06-06T15:15+02:00","image":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500},"description":"Były mnich mówi, że oszukiwał turystów, by przetrwać. Pomarańczowe szaty suszą się na słońcu. Drzwi świątyni zamknięto, bo ktoś kradł posążki. Też mam w sobie gniew, kiedy amerykanki robią sobie zdjęcie na tle kraju; białe ciało z drinkiem, w bikini . Wcześniej wzlatywały na paralotniach&hellip;","author":{"@type":"Person","name":"Jan Mokrzycki","url":"./../../post/authors/jan-mokrzycki/"},"publisher":{"@type":"Organization","name":"admin","logo":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500}}}</script><noscript><style>img[loading] {
+    })();</script><link rel="canonical" href="./../../post/anger-i-have-it-here/"><link rel="shortcut icon" href="./../../media/website/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="./../../assets/css/style.css?v=d83e1f6f48fdf52d5ba72fbd2accdd66"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./../../post/anger-i-have-it-here/"},"headline":"Anger, I have it here","datePublished":"2026-06-03T13:30+02:00","dateModified":"2026-06-06T15:15+02:00","image":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500},"description":"Były mnich mówi, że oszukiwał turystów, by przetrwać. Pomarańczowe szaty suszą się na słońcu. Drzwi świątyni zamknięto, bo ktoś kradł posążki. Też mam w sobie gniew, kiedy amerykanki robią sobie zdjęcie na tle kraju; białe ciało z drinkiem, w bikini . Wcześniej wzlatywały na paralotniach&hellip;","author":{"@type":"Person","name":"Jan Mokrzycki","url":"./../../post/authors/jan-mokrzycki/"},"publisher":{"@type":"Organization","name":"admin","logo":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500}}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript><script async src="https://www.googletagmanager.com"></script><script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -365,7 +365,24 @@
                     this.classList.add('is-loaded');
                 }, false);
             }
-        }</script><script>(function () {
+        }</script><script>document.addEventListener("click", function(e) {
+			var link = e.target.closest("[data-lightbox]");
+			if (!link) return;
+			e.preventDefault();
+			var box = document.createElement("div");
+			box.className = "patronat-lightbox";
+			box.innerHTML = '<img src="' + link.href + '" alt="">';
+			box.addEventListener("click", function() {
+				box.remove();
+			});
+			document.addEventListener("keydown", function esc(ev) {
+				if (ev.key === "Escape") {
+					box.remove();
+					document.removeEventListener("keydown", esc);
+				}
+			});
+			document.body.appendChild(box);
+		});</script><script>(function () {
     'use strict';
 
     var REMEMBER = true;
