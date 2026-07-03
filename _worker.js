@@ -73,7 +73,7 @@ function buildPatronatyHTML(tsv) {
       const cover = coverUrl(r[iOkladka]);
       html += `<article class="patronat">`;
       if (cover) {
-        const coverBig = cover.replace("sz=w600", "sz=w1200");
+        const coverBig = cover.replace("sz=w800", "sz=w1600");
         html += `<a class="patronat-lupa" href="${esc(coverBig)}" data-lightbox>
           <img class="patronat-okladka" src="${esc(cover)}" alt="Okładka: ${esc(r[iTytul])}" loading="lazy">
         </a>`;
