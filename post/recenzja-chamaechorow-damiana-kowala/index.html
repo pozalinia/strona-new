@@ -347,7 +347,7 @@
             if (p.readable) { h.classList.add('wcag-readable'); }
             if (p.underline) { h.classList.add('wcag-underline'); }
         } catch (e) {}
-    })();</script><link rel="canonical" href="./../../post/recenzja-chamaechorow-damiana-kowala/"><link rel="shortcut icon" href="./../../media/website/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="./../../assets/css/style.css?v=2903d67a61f1cdde44fb7d19d5a61d9f"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./../../post/recenzja-chamaechorow-damiana-kowala/"},"headline":"Recenzja „Chamaechorów” Damiana Kowala","datePublished":"2025-11-25T18:33+01:00","dateModified":"2025-12-07T23:33+01:00","image":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500},"description":"Zdarzają się czasem takie zbiory wierszy, że myśli się o nich – to literatura zaiste piękna. W przypadku „Chamaechorów” Damiana Kowala mamy do czynienia z poezją śpiewną, kojącą, opiewającą doskonałość natury, lecz stojącą także w obliczu czekającej nas klimatycznej katastrofy. To poezja niepozbawiona łyżki dziegciu,&hellip;","author":{"@type":"Person","name":"Agata Drozd","url":"./../../post/authors/agata-drozd/"},"publisher":{"@type":"Organization","name":"admin","logo":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500}}}</script><noscript><style>img[loading] {
+    })();</script><link rel="canonical" href="./../../post/recenzja-chamaechorow-damiana-kowala/"><link rel="shortcut icon" href="./../../media/website/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="./../../assets/css/style.css?v=db254704b4f9e97e66d9b60ca994c07c"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./../../post/recenzja-chamaechorow-damiana-kowala/"},"headline":"Recenzja „Chamaechorów” Damiana Kowala","datePublished":"2025-11-25T18:33+01:00","dateModified":"2025-12-07T23:33+01:00","image":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500},"description":"Zdarzają się czasem takie zbiory wierszy, że myśli się o nich – to literatura zaiste piękna. W przypadku „Chamaechorów” Damiana Kowala mamy do czynienia z poezją śpiewną, kojącą, opiewającą doskonałość natury, lecz stojącą także w obliczu czekającej nas klimatycznej katastrofy. To poezja niepozbawiona łyżki dziegciu,&hellip;","author":{"@type":"Person","name":"Agata Drozd","url":"./../../post/authors/agata-drozd/"},"publisher":{"@type":"Organization","name":"admin","logo":{"@type":"ImageObject","url":"./../../media/website/logo_light.png","height":500,"width":500}}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript><script async src="https://www.googletagmanager.com"></script><script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -382,7 +382,27 @@
 				}
 			});
 			document.body.appendChild(box);
-		});</script><script>(function () {
+		});
+    document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".patronat-opis").forEach(function (opis) {
+    opis.classList.add("przycity");
+    // czy tekst faktycznie się nie mieści?
+    if (opis.scrollHeight <= opis.clientHeight + 2) {
+      opis.classList.remove("przycity"); // krótki opis - nic nie robimy
+      return;
+    }
+    var btn = document.createElement("button");
+    btn.className = "patronat-rozwin";
+    btn.textContent = "Rozwiń";
+    btn.setAttribute("aria-expanded", "false");
+    btn.addEventListener("click", function () {
+      var zwiniety = opis.classList.toggle("przycity");
+      btn.textContent = zwiniety ? "Rozwiń" : "Zwiń";
+      btn.setAttribute("aria-expanded", String(!zwiniety));
+    });
+    opis.insertAdjacentElement("afterend", btn);
+  });
+});</script><script>(function () {
     'use strict';
 
     var REMEMBER = true;
